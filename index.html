@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Profile Card</title>
+  <script src=
+  'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js'>
+      </script>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script> 
+  $(document).ready(function () {
+  "use strict";
+  $(".pCard_add").click(function () {
+    $(".pCard_card").toggleClass("pCard_on");
+    $(".pCard_add i").toggleClass("fa-plus fa-minus");
+  });
+
+  /*$(".location").click(function () {
+    $(".pCard_down").toggleClass("pCard_one");
+    $(".pCard_one i" ).toggleClass("fa fa-plus");
+  });*/
+});
+</script>
+
+
+</head>
+<body>
+
+  <div class="pCard_card">
+
+    <div class="pCard_up" >
+       <div class="pCard_add"><i class="fa fa-plus"></i></div>
+    </div>
+    <div class="pCard_down">
+      <div class="lines"></div>
+      <div class="pCard_text">
+        <h3 style="color: #45f3ff">Van Goggles</h3>
+        <p>Front-end Developer</p>
+     </div>
+     <div class="location">
+      <i class="fa fa-map-marker-alt" style="color: #a7a8aa;"></i>
+       <span>Auckland, New Zealand</span>
+     </div>
+    </div>
+    <div class="pCard_back">
+       <button class="followMe" style="--bg: #ed145b;">Follow Me</button>
+       <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+       <a href="https://www.linkedin.com/in/daniel-ortiz-developer-frontend"><i class="fab fa-linkedin-in"></i></a>
+       <a href="#"><i class="fab fa-google-plus-g"></i></i></a> <br>
+       <a href="#"><i class="fab fa-whatsapp"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <div class="btn">
+           <button class="download-btn" data-timer="5" style="--bg: #334750">
+            <i class="fa fa-file-download"></i> CV Download
+          </button>
+       </div>
+    </div>
+    
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js" defer></script>
+     
+  
+</body>
+</html>
+     
